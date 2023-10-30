@@ -10,8 +10,14 @@ return: float area for the circle
 note: Area of a circle is given by A = pi*(square of the radius)
 You may want to use the math module to complete this problem
 """
+import math
 
-def area():
+def area(radius):
+    radius = float(input())
+    if radius <= 0:
+        return None
+    else:
+        area = math.pi * radius ** 2
     return
 
 
