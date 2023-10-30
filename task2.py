@@ -10,8 +10,14 @@ r = rate of interest as a percentage
 """
 
 def compoundInterest(P,r,t,n):
+    P = input('Amount invested: ')
+    r = input('Rate of interest as percentage: ')
+    t = input('Time in years: ')
+    n = input('How often isnterest is calculated: ')
     A = P * (1 + r/n)**(n*t)
     return round(A, 2)
+
+compoundInterest
     
 
 assert compoundInterest(1000,4,2,4) == 1082.86
