@@ -14,11 +14,18 @@ Sample assertions:
 assert hypotenuse(6,8) == 10
 (2 points)
 """
+import math
 
+def hypotenuse(a, b):
+    a = float(input('Enter the length of one side of the triangle: '))
+    b = float(input('Enter the length of another side of the triangle:'))
 
-def hypotenuse():
-    pass
-
+    if a <= 0 or b <= 0:
+        return None
+    else:
+        c = math.sqrt(a**2 + b**2)
+        return round(c, 2)
+    
 assert hypotenuse(6,8) == 10
 assert hypotenuse(5,12) == 13
 assert hypotenuse(4,6) == 7.21
