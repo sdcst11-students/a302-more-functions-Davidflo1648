@@ -15,8 +15,9 @@ assert btcTocad(1) == 45000
 """
 
 def btcTocad():
-    pass
-
+    amount = (input('Amount of currency being converted: '))
+    currBTC = 45000
+    return amount * currBTC
 
 """
 This checks to see if you are running the program as the main script or
